@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.addEventListener('click', closeModal);
     topOverlay.addEventListener('click', closeModal);
 
-    const backgroundLocalStorage = localStorage.getItem('background');
+    const backgroundLocalStorage = localStorage.getItem('background') || '0';
     body.style.backgroundImage = `url(${backgrounds[backgroundLocalStorage]}`;
 });
 
